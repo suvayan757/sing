@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav{
+    width: 100vw;
+    height: 8vh;
+    color: white;
+    background-color: #191414;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+#nav>div{
+    padding-left: 0.4rem;
+}
+.logo{
+    background-image: url("https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png");
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+   margin-left: 2rem;
+}
+.elements{
+    padding: 0rem 2rem;
+    /* font-weight: 400; */
+}
+#spotify{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1DB954;
+}
+#hero{
+    height: 80vh;
+    background-color: #1db9548f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80vw;
+    height: 75vh;
+    background-color: #191414;
+    /* margin: 0.5rem; */
+    border-radius: 1rem;
+    background-image: url("https://www.wallpaperflare.com/static/586/979/638/anime-girl-green-forest-wallpaper.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-blend-mode: overlay;
+    display: grid;
+    /* gap: 0.5rem; */
+    grid-template-rows: repeat(autofit, minmax(0.5fr, 2fr));
+}
+.songs{
+    width: 35vw;
+    height: 6.7vh;
+    background-color: rgba(255, 255, 255, 0.199);
+    margin: 0.5rem 0.5rem;
+    /* padding: 0rem 1rem; */
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.songs:hover{
+    background-color: #1DB954;
+    color: white;
+}
+.songs p{
+    color: gray;
+}
+.img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid #1DB954;
+    margin: 1rem;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191414;
+    height: 12vh;
+}
+#slider{
+    width: 70vw;
+    /* border: 2px solid white; */
+    cursor: pointer;
+    /* appearance: none ; */
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    height: 0.2rem;
+    color: #1DB954;
+    transition: ease;
+}
+#slider::-webkit-slider-thumb {
+    /* -webkit-appearance: none; /* Override default look */
+    /* appearance: none;  */
+    width: 1rem; 
+    height: 0.2rem; /* Slider handle height */
+    background: #1DB954; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+#slider::-moz-range-thumb {
+    width: px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #1DB954; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+#slider::-webkit-progress-bar{
+    background-color: #1DB954;
+}
+  
+.icons{
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    width: 75vw;
+}
+.p{
+    margin:0.8rem 1rem 0rem;
+    color: white;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    /* transition: 1s ease; */
+}
+.p:hover{
+    color: #1DB954;
+}
+.bottom .active{
+    color: #1DB954;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+#play{
+    /* background-image: url('https://p.kindpng.com/picc/s/400-4001641_aa-playbutton-white-24-7-hd-png.png'); */
+    background-size: contain;
+}
+.songname{
+    padding-left: 1.2rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: block;
+    color: gray;
+}
+#sname{
+    transition: 0.4s ease-in-out;
+}
